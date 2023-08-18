@@ -1,28 +1,7 @@
-const numeros = [1, 3, 5, 7];
-numeros.unshift(0);
-console.log(numeros);
-numeros.unshift(0,2,4);
-console.log(numeros);
-numeros.push(10,20,30,40);
-console.log(numeros);
-console.log(numeros[11]);
-numeros.splice(1, 1, 'dois');
-console.log(numeros);
-numeros.pop();
-console.log(numeros);
-let ultimoNum = numeros.pop();
-console.log(numeros);
-console.log(ultimoNum);
-let primeiroNum = numeros.shift();
-console.log(numeros);
-console.log(primeiroNum);
-console.log(numeros.length);
-for (let i = 0; i < numeros.length; i++) {
-    console.log(numeros[i])
-    
-}
-numeros.forEach(function(numero) {
-    console.log(numero)
-});
-
-
+let nomes = ['bruno', 'paula', 'chico', 'daniel', 'breno', 'ricardo', 'joao', 'ana', 'maria', 'vitor'];
+let idades = [31, 39, 35, 45, 55, 65, 30, 31, 9, 12];
+let cores = ['verde', 'azul', 'cinza', 'lilas', 'preto', 'laranja', 'rosa', 'grafite', 'ouro', 'prata'];
+console.log(nomes, idades, cores);
+idades.splice(1, 1, 98);
+cores.splice(1, 1, 'furta-cor');
+console.log(idades, nomes, cores);
